@@ -1,5 +1,9 @@
-const shout = (message) => {
-    console.log(message.toUpperCase());
-}
+const shout = (message) => message.toUpperCase() + "!";
 
-shout("hello world");
+const words = ["hello", "js", "pain",]
+
+const lengthsTotal = words.reduce((acc, word) => {
+    return acc + word.length;
+}, 0);
+
+console.log(lengthsTotal);
